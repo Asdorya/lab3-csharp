@@ -9,7 +9,7 @@
 ## Команды:
 1. cd Desktop
 2. git clone https://github.com/Asdorya/lab3-csharp.git - клонировать репозиторий на пк
-3. сd lab3-cshar
+3. сd lab3-csharp
 4. git pull - обновление данных ветки с репозитория
 5. git add * 
 6. git commit -m «Комментарий» 
