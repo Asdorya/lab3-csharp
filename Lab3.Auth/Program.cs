@@ -1,12 +1,20 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddSingleton<Lab3.Auth.Services.IAuthService, Lab3.Auth.Services.AuthService>();
+builder.Services.AddSingleton<Lab3.Auth.Services.IAppointmentService, Lab3.Auth.Services.AppointmentService>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+app.MapControllers();
 
 var summaries = new[]
 {
@@ -31,4 +39,8 @@ app.Run();
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+}
+
+public partial class Program
+{
 }

@@ -1,4 +1,6 @@
-﻿namespace Lab3.Auth.Tests;
+namespace Lab3.Auth.Tests;
+
+using Xunit;
 
 public class UnitTest1
 {

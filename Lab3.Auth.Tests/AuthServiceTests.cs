@@ -1,4 +1,5 @@
 // Lab3.Auth.Tests/AuthServiceTests.cs
+using System;
 using Lab3.Auth.Services;
 using Xunit;
 

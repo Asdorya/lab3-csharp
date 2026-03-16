@@ -26,3 +26,5 @@ C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth\obj\Debug\net9.0\refint\La
 C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth\obj\Debug\net9.0\Lab3.Auth.pdb
 C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth\obj\Debug\net9.0\Lab3.Auth.genruntimeconfig.cache
 C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth\obj\Debug\net9.0\ref\Lab3.Auth.dll
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth\bin\Debug\net9.0\Lab3.Auth.staticwebassets.runtime.json
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth\obj\Debug\net9.0\compressed\tov74funrf-bpv7xju6rz.gz
