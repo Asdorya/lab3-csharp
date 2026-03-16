@@ -8,7 +8,7 @@ on:
 
 jobs:
   test-and-analyze:
-    runs-on: [self-hosted, windows]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
@@ -28,15 +28,10 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Run tests with coverage
-        run: |
-          dotnet test --no-build \
-            --configuration Release \
-            --collect:"XPlat Code Coverage" \
-            --results-directory ./coverage-results \
-            -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
+        run: dotnet test --no-build --configuration Release --collect:"XPlat Code Coverage" --results-directory ./coverage-results -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
 
       - name: SonarQube Analysis
-        uses: SonarSource/sonarqube-scan-action@master
+        uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_HOST_URL: http://localhost:9000
