@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3.Auth", "Lab3.Auth\Lab3.Auth.csproj", "{F7CB1A98-EB9E-03A7-2668-61DDA0B33B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3.Auth.Tests", "Lab3.Auth.Tests\Lab3.Auth.Tests.csproj", "{4F574447-EA6E-A927-841F-FBF5F1A8294B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7CB1A98-EB9E-03A7-2668-61DDA0B33B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7CB1A98-EB9E-03A7-2668-61DDA0B33B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7CB1A98-EB9E-03A7-2668-61DDA0B33B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7CB1A98-EB9E-03A7-2668-61DDA0B33B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F574447-EA6E-A927-841F-FBF5F1A8294B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F574447-EA6E-A927-841F-FBF5F1A8294B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F574447-EA6E-A927-841F-FBF5F1A8294B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F574447-EA6E-A927-841F-FBF5F1A8294B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8CC81355-DD34-451B-A3A0-B08EEE410437}
+	EndGlobalSection
+EndGlobal
