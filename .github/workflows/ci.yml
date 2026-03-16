@@ -16,12 +16,12 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up .NET 9
+      - name: Set up .NET 8
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
+      - name: Restore dependenciess
         run: dotnet restore
 
       - name: Build
