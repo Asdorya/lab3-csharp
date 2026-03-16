@@ -414,3 +414,4 @@ C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\ref
 C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.pdb
 c:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.genruntimeconfig.cache
 c:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\ref\Lab3.Auth.Tests.dll
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\bin\Debug\net9.0\Lab3.Auth.staticwebassets.runtime.json
