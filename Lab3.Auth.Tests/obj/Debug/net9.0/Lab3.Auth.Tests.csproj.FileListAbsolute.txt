@@ -1,0 +1,9 @@
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_Lab3.Auth.Tests
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_Lab3.Auth.Tests
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.csproj.AssemblyReference.cache
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.AssemblyInfoInputs.cache
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.AssemblyInfo.cs
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.csproj.CoreCompileInputs.cache
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\Lab3.Auth.Tests.sourcelink.json
+C:\Users\TREIDCOMPUTERS\Desktop\lab3-csharp\Lab3.Auth.Tests\obj\Debug\net9.0\MvcTestingAppManifest.json
