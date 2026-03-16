@@ -1,6 +1,9 @@
 // Lab3.Auth.Tests/AuthControllerTests.cs
+using System;
 using System.Net;
+using System.Net.Http;
 using System.Net.Http.Json;
+using System.Threading.Tasks;
 using Lab3.Auth.Services;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;

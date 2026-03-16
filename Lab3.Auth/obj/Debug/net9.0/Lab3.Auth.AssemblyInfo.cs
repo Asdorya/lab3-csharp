@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab3.Auth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d20e8c76b5ba83841d2142b0a6de930ec50636a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24791d104eab8e5cea32703383fc10356c4b1f25")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab3.Auth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab3.Auth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
