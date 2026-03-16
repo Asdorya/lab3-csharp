@@ -29,4 +29,4 @@ dotnet sonarscanner end /d:sonar.token="squ_980a9a65be29462cb377b3812d330f7cf856
 7. git push origin --all
 
 
-### https://olgakraven.github.io/DKIP.PM.05.MDK.01-PIDIS.02/3.html#11
+https://olgakraven.github.io/DKIP.PM.05.MDK.01-PIDIS.02/3.html#11
