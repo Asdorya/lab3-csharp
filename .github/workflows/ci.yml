@@ -9,48 +9,38 @@ on:
 jobs:
   test-and-analyze:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up .NET (matches net9.0)
+      - name: Set up .NET 8
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
+          dotnet-version: '8.0.x'
 
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Install dotnet-sonarscanner
-        run: |
-          dotnet tool install --global dotnet-sonarscanner
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
-      - name: Begin SonarQube analysis
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: |
-          dotnet sonarscanner begin /k:"lab3-csharp" \
-            /d:sonar.host.url="$SONAR_HOST_URL" \
-            /d:sonar.token="$SONAR_TOKEN" \
-            /d:sonar.sources="Lab3.Auth" \
-            /d:sonar.tests="Lab3.Auth.Tests" \
-            /d:sonar.cs.opencover.reportsPaths="coverage-results/**/coverage.cobertura.xml"
-
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build --no-restore --configuration Release
 
       - name: Run tests with coverage
         run: |
-          dotnet test --configuration Release --no-build \
-            --collect:"XPlat Code Coverage" \
-            --results-directory ./coverage-results \
+          dotnet test --no-build 
+            --configuration Release 
+            --collect:"XPlat Code Coverage" 
+            --results-directory ./coverage-results 
             -- DataCollectionRunSettings.DataCollectors.DataCollector.Configuration.Format=cobertura
 
-      - name: End SonarQube analysis
+      - name: SonarQube Analysis
+        uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.exclusions=**/bin/**/*,**/obj/**/*
+            -Dsonar.test.exclusions=**/*.Tests/**/*
